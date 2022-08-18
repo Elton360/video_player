@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom HTML Video Player</title>
+    <link rel="stylesheet" href="./css/progress.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d7eb7278e3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <video
+      src="https://eltonlucien.com/sample.mp4"
+      id="video"
+      class="screen"
+    ></video>
+    <div class="controls">
+      <p class="title">Sample Video</p>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <div class="bottom">
+        <span class="timestamp">00:00</span>
+
+        <div class="buttons">
+          <button id="minus" class="btn">
+            <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
+          </button>
+          <button id="play_pause" class="btn"></button>
+          <button id="plus" class="btn">
+            <i class="fa-solid fa-arrow-rotate-right fa-2x"></i>
+          </button>
+        </div>
+        <button id="expand" class="btn">
+          <i class="fa-solid fa-expand fa-2x"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
